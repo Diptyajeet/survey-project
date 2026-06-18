@@ -77,3 +77,11 @@ const activeObserver = new IntersectionObserver(entries => {
 });
 
 sections.forEach(section => activeObserver.observe(section));
+document.querySelectorAll(".footer-toggle").forEach(button => {
+    button.addEventListener("click", () => {
+
+        const content = button.nextElementSibling;
+
+        content.classList.toggle("active");
+    });
+});
