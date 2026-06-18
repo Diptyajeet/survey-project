@@ -1,0 +1,152 @@
+<head>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<div class="cursor-glow"></div>
+
+<section class="form-section">
+
+    <div class="form-container">
+
+        <div class="guide-card" id="guideCard">
+            <img src="assets/Dipto_logo.jpeg" alt="Dipto guide">
+            <div>
+                <span>Dipto Guide</span>
+                <p id="guideText">Give your basic details first. If I know you, I will help fill part of the survey.</p>
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+
+        <form id="surveyForm">
+
+            <!-- STEP 1 -->
+            <div class="step active">
+
+                <h2>Basic Information</h2>
+
+                <input
+                    type="text"
+                    name="fullName"
+                    placeholder="Full Name"
+                    autocomplete="name"
+                    autofocus
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Gmail Address"
+                    autocomplete="email"
+                    required
+                >
+
+                <input
+                    type="number"
+                    name="age"
+                    placeholder="Age"
+                    min="8"
+                    max="100"
+                    required
+                >
+
+                <select name="sex" required>
+                    <option value="">Select Sex</option>
+                    <option>Female</option>
+                    <option>Male</option>
+                    <option>Other</option>
+                    <option>Prefer not to say</option>
+                </select>
+
+                <label class="photo-upload" for="photoInput">
+                    <span id="photoLabel">Upload Your Photo</span>
+                    <input
+                        id="photoInput"
+                        type="file"
+                        name="photo"
+                        accept="image/*"
+                        required
+                    >
+                </label>
+                <img class="photo-preview" id="photoPreview" alt="Uploaded preview" hidden>
+
+                <div class="match-panel" id="matchPanel" hidden>
+                    <h3>Known profile found</h3>
+                    <p id="matchMessage"></p>
+                    <ul id="knownPoints"></ul>
+                </div>
+
+                <button type="button" class="next">
+                    Check & Continue
+                </button>
+
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="step">
+
+                <h2>Your Interests</h2>
+
+                <input
+                    type="text"
+                    name="favoriteHobby"
+                    placeholder="Favorite Hobby"
+                >
+
+                <input
+                    type="text"
+                    name="favoriteGame"
+                    placeholder="Favorite Game"
+                >
+
+                <button type="button" class="prev">
+                    Back
+                </button>
+
+                <button type="button" class="next">
+                    Continue
+                </button>
+
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="step">
+
+                <h2>Personality</h2>
+
+                <select name="personalityType">
+                    <option>Introvert</option>
+                    <option>Extrovert</option>
+                    <option>Ambivert</option>
+                </select>
+
+                <select name="energyType">
+                    <option>Morning Person</option>
+                    <option>Night Owl</option>
+                </select>
+
+                <button type="button" class="prev">
+                    Back
+                </button>
+
+                <button type="submit">
+                    Finish
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+    <div class="creator-tag" aria-label="Created by Dipto">
+        <span>Dk</span>
+        <strong>Created by Dipto✨</strong>
+    </div>
+
+    <script src="analytics.js"></script>
+    <script src="survey.js"></script>
+
+
+</section>

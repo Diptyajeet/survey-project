@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Persona Result</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <main class="result-page">
+        <section class="result-panel">
+            <div class="result-copy">
+                <p class="eyebrow">Persona unlocked</p>
+                <h1 id="personaTitle">Loading your result</h1>
+                <p id="personaSummary" class="summary">
+                    Building a quick read from your survey answers.
+                </p>
+
+                <div class="traits" id="traits"></div>
+
+                <div class="actions">
+                    <button class="primary-btn" id="spinBtn" type="button">Spin Reward</button>
+                    <button class="play-btn" id="playBtn" type="button" disabled>Play Challenge</button>
+                    <button class="ghost-btn" type="button" onclick="window.location.href='survey.html'">Retake Survey</button>
+                </div>
+            </div>
+
+            <div class="wheel-area">
+                <div class="wheel" id="rewardWheel">
+                    <span>Bonus XP</span>
+                    <span>Power Badge</span>
+                    <span>Lucky Token</span>
+                    <span>Mystery Gift</span>
+                    <span>Rare Aura</span>
+                    <span>Double Chance</span>
+                </div>
+                <div class="pointer"></div>
+                <p id="rewardText" class="reward-text">Spin to reveal your reward.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="creator-tag" aria-label="Created by Dipto">
+        <span>Dk</span>
+        <strong>Created by Dipto✨</strong>
+    </div>
+
+    <script src="analytics.js"></script>
+    <script src="result.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prize Claimed</title>
+    <link rel="stylesheet" href="claim.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <main class="claim-page">
+        <section class="claim-panel">
+            <p class="eyebrow">Quest complete</p>
+            <h1 id="claimTitle">Prize claimed</h1>
+            <p class="summary" id="claimSummary">
+                Your final reward is ready.
+            </p>
+
+            <div class="prize-card">
+                <span class="label">Unlocked reward</span>
+                <strong id="rewardName">Mystery Gift</strong>
+                <p id="claimStatus">Challenge verified.</p>
+            </div>
+
+            <div class="actions">
+                <button class="primary-btn" type="button" onclick="window.location.href='Index.html'">Home</button>
+                <button class="ghost-btn" type="button" onclick="window.location.href='survey.html'">Start Again</button>
+            </div>
+        </section>
+    </main>
+
+    <div class="creator-tag" aria-label="Created by Dipto">
+        <span>Dk</span>
+        <strong>Created by Dipto✨</strong>
+    </div>
+
+    <script src="analytics.js"></script>
+    <script src="claim.js"></script>
+</body>
+</html>

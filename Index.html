@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona Quest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+
+    <nav>
+        <a class="logo" href="#home">PersonaQuest</a>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="badge">Interactive Personality Experience ✨</span>
+
+            <h1>
+                Discover Your
+                <span>Digital Persona</span>
+            </h1>
+
+            <p>
+                Answer meaningful questions, unlock hidden insights, spin the
+                reward wheel, and complete a final challenge built around you.
+            </p>
+
+            <div class="buttons">
+                <button class="primary-btn" onclick="window.location.href='survey.html'">
+                    Start Journey
+                </button>
+
+                <button class="secondary-btn" data-scroll="#features">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats" aria-label="PersonaQuest stats">
+        <div class="card">
+            <h2>10K+</h2>
+            <p>Participants</p>
+        </div>
+
+        <div class="card">
+            <h2>50+</h2>
+            <p>Rewards</p>
+        </div>
+
+        <div class="card">
+            <h2>100%</h2>
+            <p>Unique Results</p>
+        </div>
+    </section>
+
+    <section class="features-section" id="features">
+        <div class="section-header">
+            <span class="section-kicker">Features</span>
+            <h2>A complete interactive journey</h2>
+            <p>
+                PersonaQuest combines a guided survey, personalized results,
+                reward reveal, and a final challenge into one smooth experience.
+            </p>
+        </div>
+
+        <div class="feature-grid">
+            <article class="feature-card">
+                <span class="feature-number">01</span>
+                <h3>Smart Survey Flow</h3>
+                <p>Step-by-step questions collect user preferences without making the page feel crowded.</p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">02</span>
+                <h3>Personalized Result</h3>
+                <p>The app turns answers into a persona card with traits, summary text, and saved progress.</p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">03</span>
+                <h3>Reward Wheel</h3>
+                <p>A prize spin adds anticipation before unlocking the next part of the experience.</p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">04</span>
+                <h3>Final Challenge</h3>
+                <p>The number game gives users a quick playable moment before claiming their reward.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-copy">
+            <span class="section-kicker">About</span>
+            <h2>Built for playful discovery</h2>
+            <p>
+                PersonaQuest is a modern web experience where each page feels connected:
+                the landing page starts the journey, the survey captures intent, and the
+                reward flow gives the user a reason to keep going.
+            </p>
+            <button class="primary-btn" onclick="window.location.href='survey.html'">
+                Start Journey
+            </button>
+        </div>
+
+        <div class="about-panel">
+            <div class="about-step">
+                <strong>01</strong>
+                <span>Answer the survey</span>
+            </div>
+            <div class="about-step">
+                <strong>02</strong>
+                <span>Unlock your persona</span>
+            </div>
+            <div class="about-step">
+                <strong>03</strong>
+                <span>Spin for a reward</span>
+            </div>
+            <div class="about-step">
+                <strong>04</strong>
+                <span>Win the challenge</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="creator-tag" aria-label="Created by Dipto">
+        <span>Dk</span>
+        <strong>Created by Dipto✨</strong>
+    </div>
+
+    <script src="analytics.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

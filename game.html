@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona Challenge</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <main class="game-page">
+        <section class="game-panel">
+            <div class="game-copy">
+                <p class="eyebrow">Final challenge</p>
+                <h1>Guess the secret number</h1>
+                <p class="summary" id="playerIntro">
+                    Your reward is loaded. Beat the challenge to claim it.
+                </p>
+            </div>
+
+            <div class="challenge-box">
+                <div class="status-row">
+                    <span id="attemptsText">5 attempts left</span>
+                    <span id="rangeText">Range 1-20</span>
+                </div>
+
+                <label for="guessInput">Your guess</label>
+                <div class="guess-row">
+                    <input id="guessInput" type="number" min="1" max="20" placeholder="Enter 1-20" autofocus>
+                    <button id="guessBtn" type="button">Guess</button>
+                </div>
+
+                <p class="message" id="message">Make your first move.</p>
+
+                <div class="meter">
+                    <div class="meter-fill" id="meterFill"></div>
+                </div>
+
+                <div class="actions">
+                    <button class="claim-btn" id="claimBtn" type="button" hidden>Claim Prize</button>
+                    <button class="ghost-btn" id="resetBtn" type="button">New Number</button>
+                    <button class="ghost-btn" type="button" onclick="window.location.href='result.html'">Back Result</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="creator-tag" aria-label="Created by Dipto">
+        <span>Dk</span>
+        <strong>Created by Dipto✨</strong>
+    </div>
+
+    <script src="analytics.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
